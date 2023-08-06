@@ -9,6 +9,7 @@ import {
   Route,
   Routes
 } from "react-router-dom";
+import Footer from './components/Footer';
 
  
 function App() {
@@ -40,7 +41,7 @@ function App() {
   return (
     <>
     <Router>
-    <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} key={new Date()} />
+    <Navbar title="WordCounter" mode={mode} toggleMode={toggleMode} key={new Date()} />
     <Alert alert={alert}/>
     <div className="container my-3">
     <Routes>
@@ -54,6 +55,7 @@ function App() {
           </Route>
     </Routes>
     </div>
+    <Footer/>
     </Router>
     </> 
   );
